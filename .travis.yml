@@ -9,12 +9,17 @@ cache:
         - "~/.platformio"
 
 env:
-    - PLATFORMIO_CI_SRC=path/to/test/file.c
-    - PLATFORMIO_CI_SRC=examples/file.ino
-    - PLATFORMIO_CI_SRC=path/to/test/directory
+    - PLATFORMIO_CI_SRC=examples/adk/ArduinoBlinkLED
 
 install:
     - pip install -U platformio
+    - export PLATFORMIO_BUILD_FLAGS="-DDEBUG_USB_HOST -DWIICAMERA -Wall -Werror"
 
-# script:
-#     - platformio ci --board=TYPE_1 --board=TYPE_2 --board=TYPE_N
+    #
+    # Libraries from PlatformIO Library Registry:
+    #
+    # http://platformio.org/lib/show/77/Button
+    - platformio lib install 77
+
+script:
+    - platformio ci --board=uno
