@@ -1,6 +1,6 @@
 # embeddedtesting - Testing embedded/microcontroller builds via platformio
 
-Learning platform.io and its integration with Travis CI
+Learning platform.io and its integration with Travis CI automatic builds
 
 ## TODO:
 * MSP430 G-series Launchpad
