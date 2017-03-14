@@ -23,4 +23,4 @@ install:
     - platformio lib install 77
 
 script:
-    - platformio ci --board=uno
+    - platformio ci --board=uno --board=esp01
