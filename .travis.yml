@@ -10,6 +10,7 @@ cache:
 
 env:
     - PLATFORMIO_CI_SRC=src/Blink/Blink.ino
+    - PLATFORMIO_CI_SRC=src/Hello/SerialHello.ino
 
 install:
     - pip install -U platformio
