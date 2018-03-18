@@ -1,4 +1,4 @@
-# embeddedtesting - Testing embedded/microcontroller builds via platformio
+# embeddedtesting - Testing embedded/microcontroller builds via platformio [![Build Status](https://travis-ci.org/jpvlsmv/embeddedtesting.svg?branch=master)](https://travis-ci.org/jpvlsmv/embeddedtesting)
 
 Learning platform.io and its integration with Travis CI automatic builds
 
