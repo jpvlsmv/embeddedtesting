@@ -25,6 +25,7 @@ install:
 script:
     - platformio ci -v --board=uno --board=esp01
 
+
 addons:
     artifacts:
         s3_region: "us-east-2"
