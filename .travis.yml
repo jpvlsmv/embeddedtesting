@@ -23,10 +23,11 @@ install:
     - platformio lib install 77
 
 script:
-    - platformio ci -v --board=uno --board=esp01
+        - mkdir -p /home/travis/outputs
+        - platformio ci -v --board=uno --board=esp01 --build-dir=/home/travis/outputs --keep-build-dir
 
 
 addons:
     artifacts: 
         paths:
-            - .pioenvs/
+            - /home/travis/outputs/
