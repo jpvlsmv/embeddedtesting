@@ -27,4 +27,6 @@ script:
 
 
 addons:
-    artifacts: true
+    artifacts: 
+        paths:
+            - .pioenvs/
